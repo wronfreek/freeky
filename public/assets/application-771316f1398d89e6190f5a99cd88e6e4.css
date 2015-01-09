@@ -1,0 +1,56 @@
+/* line 8, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/reset.css.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/reset.css.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 1, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/general.css.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/general.css.scss */
+body {
+  color: #333;
+  font-family: "Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+}
+
+/* line 12, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/general.css.scss */
+.left {
+  float: left;
+}
+
+/* line 16, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/general.css.scss */
+.right {
+  float: right;
+}
+
+/* line 20, /Users/wronfreek/Desktop/github/wronfreek/app/assets/stylesheets/general.css.scss */
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: " ";
+  height: 0px;
+  visibility: hidden;
+}
