@@ -1,5 +1,5 @@
-@mixin css3($property, $value) {
+/*@mixin css3($property, $value) {
   @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
     #{$prefix}#{$property}: $value;
   }
-}
+}*/
