@@ -12,8 +12,8 @@
 .hero-text {
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	top: 7%;
-	right: 7%;
+	top: 3%;
+	right: 3%;
 	position: absolute;
 	text-align: right;
   margin-left: 200px;
@@ -29,6 +29,10 @@
 }
 
 @media only screen and (min-width: 769px) {
+  .hero-text {
+  	top: 7%;
+  	right: 7%;
+  }
 	.hero-text h1 {
 		font-size: 3.5em;
 	}
