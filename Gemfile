@@ -48,6 +48,3 @@ end
 # added gems
 
 gem 'cowsay'
-gem 'image_optim'
-gem 'image_optim_pack'
-gem 'asset-image-opt'
