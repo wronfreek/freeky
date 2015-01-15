@@ -2,6 +2,9 @@
 	min-height: 100%;
 	overflow: hidden;
   background: url(image_path('mobilebg.png')) no-repeat center bottom;
+  background: url(image_path('mobilebg-heroes.png')) no-repeat bottom center,
+  url(image_path('mobilebg-mountains.png')) no-repeat 95% 95%, 
+  url(image_path('mobilebg-sky.png')) no-repeat 85% 85%; 
 	background-attachment: scroll;
 	background-size: cover;
 }
@@ -9,14 +12,15 @@
 .hero-text {
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-	top: 10%;
-	right: 10%;
+	top: 7%;
+	right: 7%;
 	position: absolute;
 	text-align: right;
+  margin-left: 200px;
+  padding: 20px;
 }
 
 .hero-text h1 {
-	margin-left: 200px;
 	font-size: 2.8em;
 }
 
@@ -26,19 +30,22 @@
 
 @media only screen and (min-width: 769px) {
 	.hero-text h1 {
-		font-size: 4.3em;
+		font-size: 3.5em;
 	}
 	.hero-text h2 {
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 }
 
 @media only screen and (min-width: 1025px) {
 	.hero {
-	    background: url(image_path('bg.png')) no-repeat center center; 
-	     -webkit-background-size: cover;
-	     -moz-background-size: cover;
-	     -o-background-size: cover;
-	     background-size: cover;
+    background: url(image_path('bg.png')) no-repeat center center;
+    background: url(image_path('bg-heroes.png')) no-repeat bottom right,
+    url(image_path('bg-mountains.png')) no-repeat center center, 
+    url(image_path('bg-sky.png')) no-repeat top center; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 	}
 }

@@ -8,8 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= body_class %>">
-
-<%= yield %>
-
+  <%= render :partial => 'layouts/navigation' %>
+  <%= yield %>
 </body>
 </html>
