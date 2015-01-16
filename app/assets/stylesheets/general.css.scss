@@ -24,3 +24,55 @@ body {
 	height: 0px;
 	visibility: hidden;
 }
+
+nav {
+  position: fixed;
+  a {
+    color: whitesmoke;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+  }
+  a:hover {
+    color: white;
+    background: rgba(0,0,0,0.25);
+  }
+  span.icon {
+    display: block;
+    font-size: 30px;
+    height: 30px;
+  }
+  span.text {
+    display: block;
+    font-size: 18px;
+  }
+  a.toggle-menu span {
+    @include css3transition(transition, transform .25s ease-out 0s);
+    @include css3(transform, rotate(0deg));
+    &:before {
+      content: "\e600";
+    }
+  }
+  li a {
+    @include css3(transition, ease-in 0.25s);
+    @include css3(transform, translateX(-100%));
+  }
+  li {
+    margin-top: 1px;
+  }
+}
+
+nav.show {
+  a.toggle-menu span {
+    @include css3transition(transition, transform .15s ease 0s);
+    @include css3(transform, rotate(-180deg));
+    &:before {
+      content: "\e601";
+    }
+  }
+  li a {
+    @include css3(transition, ease 0.15s);
+    @include css3(transform, translateX(0));
+  }
+}
