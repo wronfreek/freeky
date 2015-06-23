@@ -48,3 +48,4 @@ end
 # added gems
 
 gem 'cowsay'
+gem 'mobile-fu', '~> 1.3.1'
