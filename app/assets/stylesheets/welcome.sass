@@ -1,6 +1,6 @@
 @import "mixins.sass"
 
-.hero
+#hero
   position: relative
   min-height: 100%
   overflow: hidden
@@ -10,7 +10,7 @@
   .hero-wrapper
     position: absolute
     top: 50%
-    transform: translateY(-50%)
+    @include css3(transform, translateY(-50%))
     width: 100%
   .image-wrapper, img, .hero-text
     display: inline-block
@@ -23,9 +23,7 @@
   .hero-text
     text-align: left
     width: 69%
-    box-sizing: border-box
-    -webkit-box-sizing: border-box
-    -moz-box-sizing: border-box
+    @include css3(box-sizing, border-box)
     color: #333
     padding-left: 30px
     /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5)*/
