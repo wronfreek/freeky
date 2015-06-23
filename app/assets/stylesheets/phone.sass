@@ -25,9 +25,9 @@ nav
   padding-top: 80px
   @include css3(box-sizing, border-box)
   .hero-wrapper
-    position: relative
-    @include css3(transform, none)
-    top: initial
+    top: 55%
+    left: 50%
+    @include css3(transform, translate(-50%, -50%))
   .image-wrapper
     width: 100%
     text-align: center
@@ -42,5 +42,11 @@ nav
       font-size: 1.5em
       
 footer
+  p.made-by
+    text-align: center
   img
-    display: none
+    width: 100px
+    position: initial
+    left: initial
+    @include css3(transform, none)
+    margin-top: 20px
