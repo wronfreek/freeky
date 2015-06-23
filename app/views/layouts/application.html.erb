@@ -12,8 +12,9 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="<%= body_class %>">
-  <%= render :partial => 'layouts/navigation' %>
+  <%= render :partial => 'layouts/header' %>
   <%= yield %>
+  <%= render :partial => 'layouts/footer' %>
   </script>
 </body>
 </html>

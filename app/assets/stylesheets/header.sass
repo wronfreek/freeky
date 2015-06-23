@@ -1,12 +1,17 @@
-nav
+header
   position: fixed
   z-index: 10
-  right: 0
+  width: 100%
+  background: rgba(0,0,0,0.5)
+
+nav
+  float: right
   padding: 0 30px
   ul
     li
       display: inline-block
       a
+        color: whitesmoke
         font-size: 18px
         padding: 15px
         box-sizing: border-box
@@ -14,13 +19,15 @@ nav
         -moz-box-sizing: border-box
         display: block
         text-decoration: none
-        color: inherit
         cursor: pointer
+        transition: .3s
+        -webkit-transition: .3s
+        -moz-transition: .3s
         &:hover
-          color: rgba(51,51,51,0.7)
+          color: #cfcfcf
       a.inactive
         cursor: default
-        color: rgba(51,51,51,0.4)
+        color: #aaa
         &:hover
-          color: rgba(51,51,51,0.4)
+          color: #aaa
         
