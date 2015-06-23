@@ -1,0 +1,39 @@
+@import "mixins.sass"
+
+.hero
+  position: relative
+  min-height: 100%
+  overflow: hidden
+  @include css3(background-size, cover)
+  background: whitesmoke
+  text-align: center
+  .hero-wrapper
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+  .image-wrapper, img, .hero-text
+    display: inline-block
+    vertical-align: middle
+  .image-wrapper
+    width: 30%
+    text-align: right
+  img
+    width: 210px
+  .hero-text
+    text-align: left
+    width: 69%
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    color: #333
+    padding-left: 30px
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5)*/
+    h1
+      font-size: 3.2em
+      b
+        font-weight: normal
+      i
+        font-style: normal
+    .red
+      color: #f2224a
